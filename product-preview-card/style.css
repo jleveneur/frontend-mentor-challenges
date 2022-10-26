@@ -1,0 +1,123 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(156, 42%, 18%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: var(--dark-grayish-blue);
+}
+
+.card {
+  display: flex;
+  height: 50%;
+  width: 600px;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.image {
+  height: 100%;
+  min-width: 50%;
+  background: url("./images/image-product-desktop.jpg") no-repeat center / cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 32px;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.title {
+  font-family: "Fraunces";
+  font-weight: 700;
+  width: 80%;
+  color: var(--dark-blue);
+}
+
+.description {
+  line-height: 1.5;
+}
+
+.price-informations {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: "Fraunces";
+}
+
+.price {
+  color: var(--dark-cyan);
+}
+
+.price-without-reduction {
+  text-decoration: line-through;
+  font-family: "Montserrat";
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--dark-cyan);
+  color: var(--white);
+  gap: 12px;
+}
+
+.button:hover {
+  background: var(--very-dark-cyan);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    height: 90%;
+    width: 91%;
+    flex-direction: column;
+  }
+
+  .image {
+    height: 38%;
+    width: 100%;
+    background: url("./images/image-product-mobile.jpg") no-repeat center /
+      cover;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .informations {
+    justify-content: space-around;
+    padding: 25px;
+    height: 62%;
+  }
+  .title {
+    width: 100%;
+  }
+}
