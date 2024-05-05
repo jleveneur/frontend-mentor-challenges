@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <article class="nft-card">
+      <figure class="nft-card__image-container">
+        <div class="nft-card__icon-container">
+          <img
+            src="./assets/images/icon-view.svg"
+            alt="icon-view"
+            class="nft-card__icon-view"
+            width="46"
+            height="46"
+          />
+        </div>
+        <img
+          class="nft-card__image"
+          src="./assets/images/image-equilibrium.jpg"
+          alt="image-equilibrium"
+        />
+      </figure>
+      <h1 class="nft-card__title">Equilibrium #3429</h1>
+      <p class="nft-card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="nft-card__info">
+        <div class="nft-card__info-value">
+          <img
+            class="nft-card__info-icon"
+            src="./assets/images/icon-ethereum.svg"
+            alt="icon-ethereum"
+          />
+          <span class="nft-card__info-value-text">0.041 ETH</span>
+        </div>
+        <div class="nft-card__info-date">
+          <img
+            class="nft-card__info-icon"
+            src="./assets/images/icon-clock.svg"
+            alt="icon-clock"
+          />
+          <span class="nft-card__info-date-text">3 days left</span>
+        </div>
+      </div>
+      <footer class="nft-card__author">
+        <img
+          class="nft-card__author-image"
+          src="./assets/images/image-avatar.png"
+          alt="image-avatar"
+          width="32"
+          height="32"
+        />
+        <p>
+          Creation of <span class="nft-card__author-name">Jules Wyvern</span>
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
