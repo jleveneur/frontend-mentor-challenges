@@ -24,8 +24,8 @@ Users should be able to:
 ### Screenshot
 
 <div style="display: flex; gap: 8px">
-  <img src="./solution/desktop-design.png" alt="Mobile" style="width: 50%;" />
-  <img src="./solution/active-states.png" alt="Active" style="width: 50%;" />
+  <img src="./solution/desktop-design.png" alt="Desktop Design" style="width: 50%;" />
+  <img src="./solution/active-states.png" alt="Active States" style="width: 50%;" />
 </div>
 
 ### Links
