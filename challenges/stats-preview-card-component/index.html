@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <article class="card">
+      <header class="card__header">
+        <picture>
+          <source
+            srcset="./assets/images/image-header-desktop.jpg"
+            media="(min-width: 992px)"
+          />
+          <img
+            src="./assets/images/image-header-mobile.jpg"
+            alt="Header image"
+            class="card__illustration"
+          />
+        </picture>
+      </header>
+      <main class="card__content">
+        <section class="card__theme">
+          <h1 class="card__theme-title">
+            Get <span class="card__highlight">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="card__theme-description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </section>
+        <section class="card__stats">
+          <div class="card__stat">
+            <h2 class="card__stat-number">10k+</h2>
+            <p class="card__stat-label">companies</p>
+          </div>
+          <div class="card__stat">
+            <h2 class="card__stat-number">314</h2>
+            <p class="card__stat-label">templates</p>
+          </div>
+          <div class="card__stat">
+            <h2 class="card__stat-number">12M+</h2>
+            <p class="card__stat-label">queries</p>
+          </div>
+        </section>
+      </main>
+    </article>
+  </body>
+</html>
